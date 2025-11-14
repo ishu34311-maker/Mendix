@@ -25,7 +25,7 @@ st.set_page_config(page_title="College App", layout="wide")
 #   LOGIN FUNCTION
 # -----------------------------
 def login(username, password):
-    if username == "ishu_hada" and password == "Upamnyu13":
+    if username == "ishu_hada" and password == "Upmanyu13":
         return "admin"
     record = users_collection.find_one({"username": username, "password": password})
     if record:
@@ -252,4 +252,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
